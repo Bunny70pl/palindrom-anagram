@@ -72,6 +72,13 @@ public class MainActivity extends AppCompatActivity {
         );
 
     }
+    /*
+    nazwa: czyPalindrom
+    opis: funckja ma za zadanie sprawdzic cdzy podane slowo jest palindromem
+    parametry:
+    zmienna typu string ktora otrzymuje i przetrzymuje slowo ktore bedzei sprawdzane pod katem bycia palindromem
+    return: zwraca true badz false w zanleznosci od tego czy jest palindromem czy nie
+     */
     private boolean czyPalindrom(String slowo){
         boolean czyJestPalindromem = true;
         int j = slowo.length() - 1;
@@ -85,6 +92,14 @@ public class MainActivity extends AppCompatActivity {
         return czyJestPalindromem;
     }
 
+    /*
+   nazwa: czySaAnagramem
+   opis: funckja ma za zadanie sprawdzic czy podane slowa sa anagramami
+   parametry:
+   zmienna typu string ktora otrzymuje i przetrzymuje slowo ktore bedzei sprawdzane pod katem bycia anagramem
+   zmienna typu string ktora otrzymuje i przetrzymuje slowo ktore bedzei sprawdzane pod katem bycia anagramem
+   return: zwraca true badz false w zanleznosci od tego czy sa anagramami czy nie
+    */
     private boolean czySaAnagramem(String slowo1, String slowo2){
         boolean czySaAnagramami = true;
         if(slowo1.length() != slowo2.length()){
