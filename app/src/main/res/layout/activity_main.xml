@@ -1,19 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="@color/green"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textColor="#213769"
+        android:layout_margin="16dp"
+        android:textSize="16dp"
+        android:text="Podaj pierwsze slowo" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <EditText
+        android:id="@+id/editTextSlowo1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#213769"
+        android:layout_margin="16dp"
+        android:ems="10"
+        android:textSize="16dp"
+        android:inputType="text"
+        android:hint="Podaj pierwsze slowo" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_margin="16dp"
+        android:textColor="#213769"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:text="Podaj drugie slowo" />
+
+    <EditText
+        android:id="@+id/editTextSlowo2"
+        android:layout_width="match_parent"
+        android:textColor="#213769"
+        android:layout_margin="16dp"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Podaj drugie slowo" />
+
+    <Button
+        android:id="@+id/buttonPalindrom"
+        android:textColor="#FFFFFF"
+        android:layout_width="match_parent"
+        android:backgroundTint="#0000FF"
+        android:layout_margin="16dp"
+        android:layout_height="wrap_content"
+        android:text="Czy palindrom" />
+
+    <Button
+        android:id="@+id/buttonAnagram"
+        android:layout_margin="16dp"
+        android:backgroundTint="#0000FF"
+        android:textColor="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Czy anagram" />
+
+    <TextView
+        android:id="@+id/textViewWynik"
+        android:layout_width="match_parent"
+        android:textColor="#213769"
+        android:layout_margin="16dp"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:adjustViewBounds="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/gory" />
+
+</LinearLayout>
